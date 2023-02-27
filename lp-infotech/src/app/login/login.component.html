@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand">LP Infotech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/edit">Edit</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- login -->
+<div class="card mt-5 w-25 m-auto">
+    <div class="card-header text-primary fw-bold bg-white fs-4">
+        Login with Us!
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="userEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="userEmail" placeholder="Email Address">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="Userpassword" placeholder="Password">
+            </div>
+            <div class="mb-3 form-check float-end">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Forgot Password?</label>
+            </div>
+        </form>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </div>
+    </div>
+</div>
