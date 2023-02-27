@@ -32,7 +32,7 @@
         Register with Us!
     </div>
     <div class="card-body">
-        <form #userForm="ngForm" (ngSubmit)="getUserValue(value)">
+        <form #userForm="ngForm">
             <div class="mb-3">
                 <label for="userFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="userFirstName">
@@ -71,7 +71,7 @@
 
         </form>
         <div class="text-center mb-3">
-            <button type="submit" class="btn btn-primary w-100" (click)="onSave(value)">Submit</button>
+            <button type="submit" class="btn btn-primary w-100" (click)="onSave()">Submit</button>
         </div>
         <div class="mb-3 form-check float-end">
             <span>Already have an account?</span>

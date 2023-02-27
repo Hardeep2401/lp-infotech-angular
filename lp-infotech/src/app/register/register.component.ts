@@ -9,11 +9,9 @@ export class RegisterComponent {
   constructor(private http: HttpClient) {}
   pathUrl = 'http://localhost:3000/user';
 
-  onSave(value: any) {
-    this.http
-      .get<any>('http://localhost:3000/user/', value)
-      .subscribe((response) => {
-        console.log(response);
-      });
+  onSave() {
+    this.http.get<any>('http://localhost:3000/user/').subscribe((response) => {
+      console.log(response);
+    });
   }
 }
