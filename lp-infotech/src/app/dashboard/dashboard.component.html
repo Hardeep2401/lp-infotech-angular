@@ -17,17 +17,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>otto@gmail.com</td>
-                        <td>Frontend Developer</td>
-                        <td>+0125-2153-023</td>
-                        <td>User</td>
-                        <td>edit</td>
+                    <tr *ngFor="let table">
+                        <th scope="row">{{table.id}}</th>
+                        <td>{{table.userFirstName}}</td>
+                        <td>{{table.userLastName}}</td>
+                        <td>{{table.userEmail}}</td>
+                        <td>{{table.userProfessional}}</td>
+                        <td>{{table.userPhoneNumber}}</td>
+                        <td>{{table.userPassword}}</td>
+                        <td></td>
                     </tr>
                 </tbody>
+               
             </table>
         </div>
     </div>
