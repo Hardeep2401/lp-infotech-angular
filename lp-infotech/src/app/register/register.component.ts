@@ -7,11 +7,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegisterComponent {
   constructor(private http: HttpClient) {}
+
   pathUrl = 'http://localhost:3000/user';
 
-  onSave() {
-    this.http.get<any>('http://localhost:3000/user/').subscribe((response) => {
-      console.log(response);
-    });
+  // onSave() {
+  //   this.http.get<any>('http://localhost:3000/user/').subscribe((response) => {
+  //     console.log(response);
+  //   });
+  // }
+  getValues(value:any) {
+    console.warn(value);
   }
 }
