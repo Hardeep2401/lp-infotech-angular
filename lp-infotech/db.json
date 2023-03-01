@@ -17,6 +17,15 @@
       "userPhoneNumber": 3864651,
       "userPassword": "456321",
       "id": 2
+    },
+    {
+      "userFirstName": "Aman ",
+      "userLastName": "Katal",
+      "userEmail": "aman@gmail.com",
+      "userProfessional": "Frontend Developer",
+      "userPhoneNumber": 1897615654,
+      "userPassword": "987456",
+      "id": 3
     }
   ]
 }
