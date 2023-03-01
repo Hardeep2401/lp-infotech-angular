@@ -1,31 +1,22 @@
 {
   "user": [
     {
-      "id": 1,
-      "firstName": "Leanne Graham",
-      "lastName": "Bret",
-      "email": "Sincere@april.biz",
-      "profession": "",
-      "phoneNumber": "",
-      "action": ""
-    },
-    {
-      "userFirstName": "",
-      "userLastName": "",
-      "userEmail": "",
-      "userProfessional": "",
-      "userPhoneNumber": "",
-      "userPassword": "",
-      "id": 2
-    },
-    {
       "userFirstName": "Hardeep",
       "userLastName": "Singh",
-      "userEmail": "fxdf@gmail.com",
-      "userProfessional": "Dot Net Developer",
-      "userPhoneNumber": 654841,
-      "userPassword": "654321",
-      "id": 3
+      "userEmail": "h@gmail.com",
+      "userProfessional": "Frontend Developer",
+      "userPhoneNumber": 54894516,
+      "userPassword": "456321",
+      "id": 1
+    },
+    {
+      "userFirstName": "Hs",
+      "userLastName": "SS",
+      "userEmail": "dfsdfg@gmail.com",
+      "userProfessional": "Backend Developer",
+      "userPhoneNumber": 3864651,
+      "userPassword": "456321",
+      "id": 2
     }
   ]
 }
