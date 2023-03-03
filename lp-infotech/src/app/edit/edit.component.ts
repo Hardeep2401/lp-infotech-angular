@@ -1,6 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Input } from '@angular/core';
+import { Component, Injectable, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { map, Observable } from 'rxjs';
 
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
@@ -8,11 +13,17 @@ import { Component, Input } from '@angular/core';
   providers: [HttpClient],
 })
 export class EditComponent {
-  constructor(private http: HttpClient) {}
-  tableData: any = [];
-  // @Input() myinput: string;
+  url = 'http://localhost:3000/user';
 
-  ngOnInit() {
-    
+  constructor(private http: HttpClient, route: ActivatedRoute) {
+    const id = route.snapshot.paramMap.get('userId');
+    this.http.get<any>(`${this.url}/${id}`).subscribe((response) => {
+      console.log(response);
+    });
   }
+
+  @ViewChild('myForm') ngForm: any;
+  tableData: any = [];
+
+  ngOnInit(tableData: any, index: number) {}
 }

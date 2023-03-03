@@ -3,10 +3,10 @@
         Update Form
     </div>
     <div class="card-body">
-        <form>
+        <form #myForm="ngForm">
             <div class="mb-3">
                 <label for="userFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="userFirstName" value="" >
+                <input type="text" class="form-control" id="userFirstName" value="">
             </div>
             <div class="mb-3">
                 <label for="userLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
@@ -40,15 +40,17 @@
                 <input type="password" class="form-control" id="UserConfirmpassword">
             </div>
 
+            <div class="text-center mb-3">
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </div>
+            <div class="mb-3 form-check float-end">
+                <span>Already have an account?</span>
+                <span class="mx-2 text-primary fw-semibold">
+                    <a href="#">Login here!</a>
+                </span>
+            </div>
+
         </form>
-        <div class="text-center mb-3">
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
-        </div>
-        <div class="mb-3 form-check float-end">
-            <span>Already have an account?</span>
-            <span class="mx-2 text-primary fw-semibold">
-                <a href="#">Login here!</a>
-            </span>
-        </div>
+
     </div>
 </div>
