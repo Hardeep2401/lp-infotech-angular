@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'edit', component: EditComponent },
+  { path: 'edit/:userId', component: EditComponent },
   { path: 'delete', component: DeleteComponent },
 ];
 

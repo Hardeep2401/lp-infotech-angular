@@ -1,49 +1,31 @@
 {
   "user": [
     {
-      "userFirstName": "Hardeep",
-      "userLastName": "Singh",
-      "userEmail": "h@gmail.com",
-      "userProfessional": "Frontend Developer",
-      "userPhoneNumber": 54894516,
-      "userPassword": "456321",
+      "userFirstName": "DD",
+      "userLastName": "SS",
+      "userEmail": "hSS@gmail.com",
+      "userProfessional": "Backend Developer",
+      "userPhoneNumber": 34545,
+      "userPassword": "asdf",
       "id": 1
     },
     {
-      "userFirstName": "Hs",
-      "userLastName": "SS",
-      "userEmail": "dfsdfg@gmail.com",
-      "userProfessional": "Backend Developer",
-      "userPhoneNumber": 3864651,
-      "userPassword": "456321",
+      "userFirstName": "retsdfv",
+      "userLastName": "zcvzfv",
+      "userEmail": "hvzcxv@gmail.com",
+      "userProfessional": "Dot Net Developer",
+      "userPhoneNumber": 35346456,
+      "userPassword": "qwert",
       "id": 2
     },
     {
-      "userFirstName": "Aman ",
-      "userLastName": "Katal",
-      "userEmail": "aman@gmail.com",
-      "userProfessional": "Frontend Developer",
-      "userPhoneNumber": 1897615654,
-      "userPassword": "987456",
+      "userFirstName": "Hs",
+      "userLastName": "dddasa",
+      "userEmail": "asash@gmail.com",
+      "userProfessional": "React JS Developer",
+      "userPhoneNumber": 1894123,
+      "userPassword": "123654",
       "id": 3
-    },
-    {
-      "userFirstName": "dzfbx",
-      "userLastName": "xc xcv ",
-      "userEmail": "vxcvxvcb@gmail.com",
-      "userProfessional": "Dot Net Developer",
-      "userPhoneNumber": 321841,
-      "userPassword": "123456",
-      "id": 4
-    },
-    {
-      "userFirstName": "FFF",
-      "userLastName": "AAA",
-      "userEmail": "hsadasdfsdf@gmail.com",
-      "userProfessional": "Frontend Developer",
-      "userPhoneNumber": 545871564,
-      "userPassword": "789456",
-      "id": 5
     }
   ]
 }
