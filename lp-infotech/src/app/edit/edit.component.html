@@ -8,17 +8,19 @@
                 <label for="userFirstName" class="form-label">First Name<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" formControlName="userFirstName">
             </div>
-            <!-- <div class="mb-3">
+            <div class="mb-3">
                 <label for="userLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" formControlName="userLastName">
             </div>
             <div class="mb-3">
                 <label for="userEmail" class="form-label">Email address <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="userEmail" placeholder="User Email">
+                <input type="email" class="form-control" id="userEmail" formControlName="userEmail"
+                    placeholder="User Email">
             </div>
             <div class="mb-3">
                 <label for="userProfessional" class="form-label">Professional <span class="text-danger">*</span></label>
-                <select class="form-select form-select mb-3" aria-label=".form-select-lg example" id="userProfessional">
+                <select class="form-select form-select mb-3" aria-label=".form-select-lg example" id="userProfessional"
+                    formControlName="userProfessional">
                     <option>-- Select Option --</option>
                     <option value="1">Frontend Developer</option>
                     <option value="2">Backend Developer</option>
@@ -28,16 +30,17 @@
             </div>
             <div class="mb-3">
                 <label for="userPhoneNumber" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                <input type="number" class="form-control" id="userPhoneNumber">
+                <input type="number" class="form-control" id="userPhoneNumber" formControlName="userPhoneNumber">
             </div>
             <div class="mb-3">
-                <label for="Userpassword" class="form-label">Password <span class="text-danger">*</span></label>
-                <input type="password" class="form-control" id="Userpassword">
+                <label for="userPassword" class="form-label">Password <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" id="userPassword" formControlName="userPassword">
             </div>
-            <div class="mb-3">
-                <label for="UserConfirmpassword" class="form-label">Confirm Password <span
+            <!-- <div class="mb-3">
+                <label for="userConfirmPassword" class="form-label">Confirm Password <span
                         class="text-danger">*</span></label>
-                <input type="password" class="form-control" id="UserConfirmpassword">
+                <input type="password" class="form-control" id="userConfirmPassword"
+                    formControlName="userConfirmPassword">
             </div> -->
 
             <div class="text-center mb-3">

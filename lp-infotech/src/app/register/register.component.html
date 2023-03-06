@@ -4,7 +4,7 @@
         Register with Us!
     </div>
     <div class="card-body">
-        <form #userForm="ngForm" (ngSubmit)="getValues(userForm.value)">
+        <form #userForm="ngForm" (ngSubmit)="getValues(userForm.value)" >
             <div class="mb-3">
                 <label for="userFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="userFirstName" name="userFirstName" ngModel>

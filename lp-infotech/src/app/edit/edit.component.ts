@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Injectable, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-edit',
@@ -21,9 +22,15 @@ export class EditComponent {
     const id = route.snapshot.paramMap.get('userId');
     this.http.get<any>(`${this.url}/${id}`).subscribe((response) => {
       console.log(response);
+    
     });
     this.userForm = fb.group({
       userFirstName: [''],
+      userLastName: [''],
+      userEmail: [''],
+      userProfessional: [''],
+      userPhoneNumber: [''],
+      userPassword: [''],
     });
   }
 }
