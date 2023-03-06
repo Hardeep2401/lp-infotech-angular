@@ -3,18 +3,18 @@
         Update Form
     </div>
     <div class="card-body">
-        <form #myForm="ngForm">
+        <form [formGroup]="userForm">
             <div class="mb-3">
-                <label for="userFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="userFirstName" value="">
+                <label for="userFirstName" class="form-label">First Name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="userFirstName">
             </div>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <label for="userLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="userLastName">
+                <input type="text" class="form-control" formControlName="userLastName">
             </div>
             <div class="mb-3">
                 <label for="userEmail" class="form-label">Email address <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="userEmail">
+                <input type="email" class="form-control" id="userEmail" placeholder="User Email">
             </div>
             <div class="mb-3">
                 <label for="userProfessional" class="form-label">Professional <span class="text-danger">*</span></label>
@@ -38,7 +38,7 @@
                 <label for="UserConfirmpassword" class="form-label">Confirm Password <span
                         class="text-danger">*</span></label>
                 <input type="password" class="form-control" id="UserConfirmpassword">
-            </div>
+            </div> -->
 
             <div class="text-center mb-3">
                 <button type="submit" class="btn btn-primary w-100">Submit</button>

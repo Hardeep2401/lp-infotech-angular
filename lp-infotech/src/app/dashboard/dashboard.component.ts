@@ -28,21 +28,5 @@ export class DashboardComponent {
   onEdit(tableData: any, index: number) {
     console.log(this.tableData[index].id);
     this.route.navigateByUrl(`/edit/${this.tableData[index].id}`);
-
-    // this.http
-    //   .get<any>(`${this.url}/${tableData[index].id}`, tableData)
-    //   .subscribe((response) => {
-    //     console.log(response);
-    //   });
-    // this.userForm.setValue({
-    //   id: this.tableData[index].id,
-    //   tableData,
-    //   userFirstName: this.tableData[index].userFirstName,
-    //   userLastName: this.tableData[index].userLastName,
-    //   userEmail: this.tableData[index].userEmail,
-    //   userProfessional: this.tableData[index].userProfessional,
-    //   userPhoneNumber: this.tableData[index].userPhoneNumber,
-    //   userPassword: this.tableData[index].userPassword,
-    // });
   }
 }
