@@ -18,7 +18,7 @@ export class DashboardComponent {
   constructor(private http: HttpClient, private route: Router) {}
 
   ngOnInit(tableData: any, index: number) {
-    this.http
+    return this.http
       .get<any>('http://localhost:3000/user', tableData)
       .subscribe((response) => {
         this.tableData = response;

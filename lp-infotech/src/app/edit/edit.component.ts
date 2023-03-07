@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-edit',
@@ -13,24 +12,37 @@ export class EditComponent {
   url = 'http://localhost:3000/user';
 
   userForm!: FormGroup;
+  userData: any = {};
 
   constructor(
     private http: HttpClient,
-    route: ActivatedRoute,
-    fb: FormBuilder
-  ) {
-    const id = route.snapshot.paramMap.get('userId');
-    this.http.get<any>(`${this.url}/${id}`).subscribe((response) => {
-      console.log(response);
-    
+    private activatedroute: ActivatedRoute,
+    private fb: FormBuilder
+  ) {}
+
+  ngOnInit() {
+    this.userForm = this.fb.group({
+      userFirstName: [' '],
+      userLastName: [' '],
+      userEmail: [' '],
+      userProfessional: [' '],
+      userPhoneNumber: [' '],
+      userPassword: [' '],
+      userConfirmPassword: [' '],
     });
-    this.userForm = fb.group({
-      userFirstName: [''],
-      userLastName: [''],
-      userEmail: [''],
-      userProfessional: [''],
-      userPhoneNumber: [''],
-      userPassword: [''],
+
+    let id = this.activatedroute.snapshot.params['userId'];
+    this.http.get(`${this.url}/${id}`).subscribe((response) => {
+      this.userData = response;
+      this.userForm = this.fb.group({
+        userFirstName: [this.userData.userFirstName],
+        userLastName: [this.userData.userLastName],
+        userEmail: [this.userData.userEmail],
+        userProfessional: [this.userData.userProfessional],
+        userPhoneNumber: [this.userData.userPhoneNumber],
+        userPassword: [this.userData.userPassword],
+        userConfirmPassword: [this.userData.userConfirmPassword],
+      });
     });
   }
 }

@@ -7,19 +7,19 @@
         <form #userForm="ngForm" (ngSubmit)="getValues(userForm.value)" >
             <div class="mb-3">
                 <label for="userFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="userFirstName" name="userFirstName" ngModel>
+                <input type="text" class="form-control" name="userFirstName" ngModel>
             </div>
             <div class="mb-3">
                 <label for="userLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="userLastName" name="userLastName" ngModel>
+                <input type="text" class="form-control" name="userLastName" ngModel>
             </div>
             <div class="mb-3">
                 <label for="userEmail" class="form-label">Email address <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="userEmail" name="userEmail" ngModel>
+                <input type="email" class="form-control" name="userEmail" ngModel>
             </div>
             <div class="mb-3">
                 <label for="userProfessional" class="form-label">Professional <span class="text-danger">*</span></label>
-                <select class="form-select form-select mb-3" aria-label=".form-select-lg example" id="userProfessional"
+                <select class="form-select form-select mb-3" aria-label=".form-select-lg example"
                     name="userProfessional" ngModel>
                     <option>-- Select Option --</option>
                     <option value="Frontend Developer">Frontend Developer</option>
@@ -30,16 +30,16 @@
             </div>
             <div class="mb-3">
                 <label for="userPhoneNumber" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                <input type="number" class="form-control" id="userPhoneNumber" name="userPhoneNumber" ngModel>
+                <input type="number" class="form-control" name="userPhoneNumber" ngModel>
             </div>
             <div class="mb-3">
                 <label for="userPassword" class="form-label">Password <span class="text-danger">*</span></label>
-                <input type="password" class="form-control" id="userPassword" name="userPassword" ngModel>
+                <input type="password" class="form-control" name="userPassword" ngModel>
             </div>
             <div class="mb-3">
                 <label for="userConfirmPassword" class="form-label">Confirm Password <span
                         class="text-danger">*</span></label>
-                <input type="password" class="form-control" id="userConfirmPassword" id="userConfirmPassword" ngModel>
+                <input type="password" class="form-control" ngModel>
             </div>
 
             <div class="text-center mb-3">

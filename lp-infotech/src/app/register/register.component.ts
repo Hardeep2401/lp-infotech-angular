@@ -15,7 +15,7 @@ export class RegisterComponent {
   url = 'http://localhost:3000/user';
 
   getValues(value: any) {
-    this.http
+    return this.http
       .post<any>('http://localhost:3000/user/', value)
       .subscribe((response) => {
         console.log(response);
