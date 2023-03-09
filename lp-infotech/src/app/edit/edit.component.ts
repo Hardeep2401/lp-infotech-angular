@@ -48,9 +48,8 @@ export class EditComponent {
 
   editUpdate(value: any) {
     // let id = this.activatedroute.snapshot.params['userId'];
-    console.log(value);
-    return this.http.put<any>(`${this.url}/${this.userData.id}`, value).subscribe((response) => {
-        console.log(response);
-      });
+    return this.http
+      .put<any>(`${this.url}/${this.userData.id}`, value)
+      .subscribe((response) => {});
   }
 }

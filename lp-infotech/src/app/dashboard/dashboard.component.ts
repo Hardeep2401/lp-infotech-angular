@@ -29,4 +29,14 @@ export class DashboardComponent {
     // console.log(this.tableData[index].id);
     this.route.navigateByUrl(`/edit/${this.tableData[index].id}`);
   }
+
+  onDelete(tableData:any) {
+
+    
+    console.log(tableData)
+    // this.http
+    //   .delete('this.url' + this.tableData.id,value).subscribe((response) => {
+    //     console.log(response)
+    //   });
+  }
 }
