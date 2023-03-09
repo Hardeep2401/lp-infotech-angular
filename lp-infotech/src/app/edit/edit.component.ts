@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { reduce } from 'rxjs';
 
 @Component({
   selector: 'app-edit',
@@ -30,7 +31,6 @@ export class EditComponent {
       userPassword: [' '],
       userConfirmPassword: [' '],
     });
-
     let id = this.activatedroute.snapshot.params['userId'];
     this.http.get(`${this.url}/${id}`).subscribe((response) => {
       this.userData = response;
@@ -44,5 +44,13 @@ export class EditComponent {
         userConfirmPassword: [this.userData.userConfirmPassword],
       });
     });
+  }
+
+  editUpdate(value: any) {
+    // let id = this.activatedroute.snapshot.params['userId'];
+    console.log(value);
+    return this.http.put<any>(`${this.url}/${this.userData.id}`, value).subscribe((response) => {
+        console.log(response);
+      });
   }
 }

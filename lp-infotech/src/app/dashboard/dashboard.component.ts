@@ -26,7 +26,7 @@ export class DashboardComponent {
   }
 
   onEdit(tableData: any, index: number) {
-    console.log(this.tableData[index].id);
+    // console.log(this.tableData[index].id);
     this.route.navigateByUrl(`/edit/${this.tableData[index].id}`);
   }
 }
