@@ -1,15 +1,6 @@
 {
   "user": [
     {
-      "userFirstName": "Hardeep ",
-      "userLastName": "Singh",
-      "userEmail": "hs@gmail.com",
-      "userProfessional": "Frontend Developer",
-      "userPhoneNumber": 789456,
-      "userPassword": "123654",
-      "id": 1
-    },
-    {
       "userFirstName": "H",
       "userLastName": "S",
       "userEmail": "h@gmail.com",
