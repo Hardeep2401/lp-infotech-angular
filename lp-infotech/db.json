@@ -1,22 +1,22 @@
 {
   "user": [
     {
-      "userFirstName": "HS",
+      "userFirstName": "Hardeep ",
       "userLastName": "Singh",
-      "userEmail": "hs@hs.com",
+      "userEmail": "hs@gmail.com",
       "userProfessional": "Frontend Developer",
-      "userPhoneNumber": 4354843,
+      "userPhoneNumber": 789456,
       "userPassword": "123654",
-      "id": 7
+      "id": 1
     },
     {
-      "userFirstName": "jksdhfjs d",
-      "userLastName": "jkdh zhd",
-      "userEmail": "djkjsfdbv@gmail.com",
-      "userProfessional": "React JS Developer",
-      "userPhoneNumber": 48975123,
-      "userPassword": "456321",
-      "id": 8
+      "userFirstName": "H",
+      "userLastName": "S",
+      "userEmail": "h@gmail.com",
+      "userProfessional": "Backend Developer",
+      "userPhoneNumber": 789654,
+      "userPassword": "123123",
+      "id": 2
     }
   ]
 }

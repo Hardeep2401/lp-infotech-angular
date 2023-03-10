@@ -12,8 +12,10 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
   url = 'http://localhost:3000/user';
-  userForm: any = [];
-  tableData: any = [];
+  userForm: any;
+  tableData: any;
+  setValue: any;
+
   @ViewChild('userForm') ngForm: any;
   constructor(private http: HttpClient, private route: Router) {}
 
@@ -27,16 +29,19 @@ export class DashboardComponent {
 
   onEdit(tableData: any, index: number) {
     // console.log(this.tableData[index].id);
-    this.route.navigateByUrl(`/edit/${this.tableData[index].id}`);
+    this.route.navigateByUrl(`/edit/${this.tableData[index].id}`, tableData);
   }
 
-  onDelete(tableData:any) {
+  getModal(tableData: any, index: number) {
+    let a = `${this.url}/${this.tableData[index].id}`;
+    this.setValue = this.tableData[index].id;
 
-    
-    console.log(tableData)
-    // this.http
-    //   .delete('this.url' + this.tableData.id,value).subscribe((response) => {
-    //     console.log(response)
-    //   });
+    console.log(a);
+  }
+
+  onDelete(value: any) {
+    let b = `${this.url}/${this.setValue}`;
+    console.log(b);
+    this.http.delete(`${b}`, value).subscribe(() => {});
   }
 }
